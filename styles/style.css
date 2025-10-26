@@ -136,12 +136,6 @@
   text-align: right;
 }
 
-/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
-
-.letter-spacing-extended {
-  letter-spacing: 0.5px;
-}
-
 /* класс для обнуления общего межбуквенного расстояния у последней буквы */
 
 .no-letter-spacing {
@@ -161,9 +155,7 @@
 
 .cover__description-text {
   font-size: 22px;
-  line-height: 28px;
-  font-weight: normal;
-  word-spacing: 18px;
+  word-spacing: 18.5px;
 }
 
 /* кнопка «Сделать ставку» */
@@ -183,7 +175,6 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  min-height: 723px;
   padding: 180px 24px 0 24px;
   color: #fff;
 }
@@ -202,6 +193,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }
