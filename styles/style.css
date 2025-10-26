@@ -1,1 +1,384 @@
-/* место для вашего кода */
+/* шапка */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  place-items: center;
+  padding: 92px 50px;
+}
+
+/* контейнер навигации */
+
+.header__menu {
+  padding-bottom: 7px;
+  justify-self: flex-start;
+}
+
+/* список ссылок */
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  list-style: circle;
+}
+
+/* маркер пункта списка */
+
+.header__links-list-item::marker {
+  font-size: 170%;
+}
+
+/* ссылка без кружочка */
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+/* каждая ссылка в пункте списка */
+
+.header__link {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ссыллка без подчеркивания */
+
+.header__link_active {
+  text-decoration: none;
+}
+
+/* контейнер логотипа */
+
+.header__logo {
+  display: block;
+  width: 136px;
+}
+
+/* картинка с логотипом */
+
+.header__logo-image {
+  height: 106px;
+}
+
+/* общий класс для блока с адресом */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 24.3px;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+/* выравнивание блока с адресом */
+
+.header__address {
+  padding-bottom: 3px;
+  justify-self: flex-end;
+}
+
+/* секция cover */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 757px;
+  background: url(../images/cover.jpg) center / cover;
+  padding: 155px 50px 50px 50px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* полупрозрачный блок поверх секции */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* заголовок */
+
+.cover__title {
+  z-index: 1;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 135px;
+  letter-spacing: 30px;
+}
+
+/* для превращения строк заголовка в блочный элемент */
+
+.aligned-text {
+  display: block;
+}
+
+/* классы для выравнивания строк текста */
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
+
+.letter-spacing-extended {
+  letter-spacing: 0.5px;
+}
+
+/* класс для обнуления общего межбуквенного расстояния у последней буквы */
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+/* контейнер для подзаголовка и кнопки */
+
+.cover__description {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* текст подзаголовка */
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: normal;
+  word-spacing: 18px;
+}
+
+/* кнопка «Сделать ставку» */
+
+.bet-button {
+  background: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  padding: 12px 32px 11px 31px;
+}
+
+/* секция lots */
+
+.lots {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  min-height: 723px;
+  padding: 180px 24px 0 24px;
+  color: #fff;
+}
+
+/* заголовок секции */
+
+.lots__heading {
+  padding-left: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* список карточек */
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* пункт списка карточек */
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+/* ссылка, обрамляющая карточку */
+
+.card-link {
+  display: block;
+  height: 100%;
+}
+
+/* карточка */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px 48px 40px;
+}
+
+/* классы для фона каждой из карточек */
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) center / cover;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) center / cover;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) center / cover;
+}
+
+/* заголовок карточки */
+
+.card__title {
+  z-index: 1;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 115%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0;
+}
+
+/* текст карточки */
+
+.card__text {
+  z-index: 1;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+/* ссылка "Посмотреть больше" */
+
+.lots__look-more-link {
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 3px 0 0 40px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0;
+  color: #000;
+}
+
+/* секция about */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  padding: 154px 0 0 24px;
+}
+
+/* класс для колонок */
+
+.about__column {
+  justify-self: center;
+}
+
+/* контейнер с логотипом */
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+/* изображение логотипа */
+
+.about__logo-image {
+  width: 61%;
+}
+
+/* заголовок секции */
+
+.about__title {
+  padding: 101px 0 0 25.5px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* блок для текстов секции */
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 30px 0 25.5px;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* подвал */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 181px 50px 82px 51px;
+}
+
+/* блок навигации по списку ссылок */
+
+.footer__menu {
+  text-align: center;
+}
+
+/* список пунктов меню */
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+/* каждая ссылка в пункте списка */
+
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* выбранная ссылка меню */
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* список ссылак на соц сети */
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-self: flex-end;
+}
+
+/* пункт списка ссылок на соц сети */
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+/* иконка соц сети */
+
+.footer__social-icon {
+  width: 48px;
+}
