@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   place-items: center;
-  padding: 92px 50px;
+  padding: 91px 50px;
 }
 
 /* контейнер навигации */
@@ -23,12 +23,6 @@
   list-style: circle;
 }
 
-/* маркер пункта списка */
-
-.header__links-list-item::marker {
-  font-size: 170%;
-}
-
 /* ссылка без кружочка */
 
 .header__links-list-item_no-bullit {
@@ -40,7 +34,7 @@
 .header__link {
   font-size: 18px;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 /* ссыллка без подчеркивания */
@@ -59,7 +53,7 @@
 /* картинка с логотипом */
 
 .header__logo-image {
-  height: 106px;
+  height: 107px;
 }
 
 /* общий класс для блока с адресом */
@@ -210,6 +204,7 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 /* карточка */
